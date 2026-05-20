@@ -477,10 +477,12 @@ footer .footer-inner {
   display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;
 }
 footer .footer-brand { font-weight: 700; color: #fff; font-size: 1rem; margin-bottom: 6px; }
-footer .footer-logos { display: flex; gap: 18px; align-items: center; margin-top: 14px; }
+footer .footer-logos { display: flex; gap: 14px; align-items: center; margin-top: 14px; flex-wrap: wrap; }
 footer .footer-logos img {
-  height: 42px; width: auto;
-  /* Transparent background — retain KIST brand colors over navy footer */
+  height: 36px; width: auto;
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
 }
 footer .footer-meta { color: rgba(202, 220, 252, 0.7); }
 footer .footer-disclosure {
@@ -846,6 +848,7 @@ footer .footer-disclosure {
       <div class="footer-meta">Korea Institute of Science and Technology × Huons BioPharma</div>
       <div class="footer-logos">
         <img src="images/logo-kist.png" alt="Korea Institute of Science and Technology (KIST)">
+        <img src="images/logo-huons.jpg" alt="Huons BioPharma">
       </div>
     </div>
     <div class="footer-meta">
