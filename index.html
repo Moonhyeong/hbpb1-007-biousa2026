@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HBPB1-007 · First-in-Class Topical Therapy for Geographic Atrophy — BIO USA 2026</title>
+<meta name="description" content="HBPB1-007 is a first-in-class topical peptide candidate for geographic atrophy that blocks TLR signalosome assembly. Featured in the KIST Technology Showcase at BIO International Convention 2026. Open to partnering, licensing, and co-development discussions.">
+<meta name="author" content="KIST · Huons BioPharma">
+
+<!-- Open Graph -->
+<meta property="og:title" content="HBPB1-007 — First-in-Class Topical Therapy for Geographic Atrophy">
+<meta property="og:description" content="32-aa TIR-derived peptide blocking TLR signalosome assembly upstream of complement. KDDF-funded IND-enabling phase. Featured at BIO USA 2026 · KIST Technology Showcase.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/og-image.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HBPB1-007 — Topical Therapy for Geographic Atrophy">
+<meta name="twitter:description" content="BIO USA 2026 · KIST Technology Showcase · KIST × Huons BioPharma">
+
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+<style>
+/* =============== Design Tokens =============== */
+:root {
+  --navy: #1E2761;
+  --teal: #065A82;
+  --deep: #21295C;
+  --accent: #028090;
+  --green: #2E7D32;
+  --amber: #B85042;
+  --ice: #CADCFC;
+  --bg: #F5F8FA;
+  --text: #1a1f36;
+  --muted: #5a6478;
+  --card: #ffffff;
+  --border: #e3e8ef;
+  --shadow: 0 2px 8px rgba(30, 39, 97, 0.06);
+  --shadow-hover: 0 6px 20px rgba(30, 39, 97, 0.12);
+  --radius: 10px;
+  --radius-lg: 16px;
+  --max-width: 1180px;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Calibri", Inter, Roboto, sans-serif;
+}
+
+/* =============== Reset / Base =============== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body {
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--teal); text-decoration: none; transition: color 0.2s; }
+a:hover { color: var(--accent); }
+h1, h2, h3, h4 { font-weight: 700; line-height: 1.25; color: var(--navy); }
+h1 { font-size: clamp(2rem, 5vw, 3rem); }
+h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 1rem; }
+h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+p { margin-bottom: 0.75rem; color: var(--text); }
+.muted { color: var(--muted); }
+
+/* =============== Layout =============== */
+.container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+section { padding: 72px 0; }
+section:nth-child(even) { background: #ffffff; }
+
+/* =============== Sticky Nav =============== */
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid var(--border);
+  padding: 12px 0;
+}
+.nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.nav-brand { font-weight: 800; color: var(--navy); font-size: 1.1rem; letter-spacing: -0.01em; }
+.nav-brand span { color: var(--accent); }
+.nav-links { display: flex; gap: 20px; align-items: center; list-style: none; }
+.nav-links a { color: var(--text); font-weight: 500; font-size: 0.93rem; }
+.nav-links a:hover { color: var(--accent); }
+.nav-cta {
+  background: var(--accent); color: #fff; padding: 8px 16px;
+  border-radius: var(--radius); font-weight: 600; font-size: 0.9rem;
+}
+.nav-cta:hover { background: var(--navy); color: #fff; }
+.nav-toggle { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--navy); }
+
+/* =============== Hero =============== */
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--deep) 60%, var(--teal) 100%);
+  color: #fff; padding: 96px 0 88px;
+  position: relative; overflow: hidden;
+}
+.hero::after {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(circle at 85% 20%, rgba(202, 220, 252, 0.15), transparent 50%);
+  pointer-events: none;
+}
+.hero-inner { position: relative; z-index: 1; }
+.hero-badges { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; }
+.badge {
+  background: rgba(202, 220, 252, 0.18);
+  border: 1px solid rgba(202, 220, 252, 0.4);
+  color: var(--ice);
+  padding: 6px 14px; border-radius: 999px;
+  font-size: 0.82rem; font-weight: 600; letter-spacing: 0.02em;
+}
+.hero h1 {
+  color: #fff; margin-bottom: 10px;
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  letter-spacing: -0.02em;
+}
+.hero-subtitle {
+  color: var(--ice); font-size: clamp(1.1rem, 2.4vw, 1.4rem);
+  font-weight: 500; margin-bottom: 18px;
+}
+.hero-lead {
+  color: #e8efff; font-size: 1.05rem;
+  max-width: 1080px; margin-bottom: 36px;
+}
+.hero-cta { display: flex; flex-wrap: wrap; gap: 14px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 12px 22px; border-radius: var(--radius);
+  font-weight: 600; font-size: 0.98rem;
+  transition: transform 0.15s, box-shadow 0.15s, background 0.2s;
+  border: none; cursor: pointer;
+}
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { background: #04a1b5; color: #fff; transform: translateY(-1px); box-shadow: var(--shadow-hover); }
+.btn-ghost {
+  background: transparent; color: #fff;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+}
+.btn-ghost:hover { background: rgba(255, 255, 255, 0.12); border-color: #fff; color: #fff; }
+
+.hero-session {
+  margin-top: 40px; padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.06);
+  border-left: 3px solid var(--ice);
+  border-radius: 4px;
+  display: inline-block;
+}
+.hero-session-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ice); margin-bottom: 4px; }
+.hero-session-text { color: #fff; font-size: 0.95rem; font-weight: 500; white-space: nowrap; }
+@media (max-width: 720px) {
+  .hero-session { display: block; }
+  .hero-session-text { white-space: normal; }
+}
+
+/* =============== At a Glance (KPI cards) =============== */
+.glance { background: #fff; }
+.glance-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+  margin-top: 8px;
+}
+.kpi {
+  background: var(--bg); border: 1px solid var(--border);
+  padding: 20px 18px; border-radius: var(--radius);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.kpi:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.kpi-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+.kpi-value { font-size: 1rem; font-weight: 600; color: var(--navy); line-height: 1.35; }
+
+/* =============== Section header =============== */
+.section-head { margin-bottom: 32px; max-width: 1080px; }
+.section-eyebrow {
+  font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 8px;
+}
+.section-lead { font-size: 1.05rem; color: var(--muted); }
+
+/* =============== Science (MoA) =============== */
+.moa-grid {
+  display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 32px; align-items: start;
+}
+.moa-list { list-style: none; padding: 0; }
+.moa-list li {
+  position: relative; padding: 14px 16px 14px 48px; margin-bottom: 10px;
+  background: #fff; border: 1px solid var(--border); border-radius: var(--radius);
+}
+.moa-list li::before {
+  content: ""; position: absolute; left: 16px; top: 18px;
+  width: 20px; height: 20px; border-radius: 50%;
+  background: var(--accent);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='white'><path d='M16.7 5.3a1 1 0 010 1.4l-8 8a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4L8 12.6l7.3-7.3a1 1 0 011.4 0z'/></svg>");
+  background-size: 14px; background-repeat: no-repeat; background-position: center;
+}
+.moa-list strong { color: var(--navy); }
+.figure-placeholder {
+  background: linear-gradient(135deg, var(--ice), #e8efff);
+  border: 2px dashed rgba(30, 39, 97, 0.25);
+  border-radius: var(--radius-lg);
+  padding: 28px; text-align: center; min-height: 260px;
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+.figure-placeholder .fp-label {
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--accent);
+  background: #fff; padding: 4px 10px; border-radius: 4px; margin-bottom: 12px;
+}
+.figure-placeholder .fp-title { font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+.figure-placeholder .fp-note { font-size: 0.82rem; color: var(--muted); }
+.platform-note {
+  margin-top: 18px; padding: 14px 18px;
+  background: var(--bg); border-left: 3px solid var(--accent);
+  border-radius: 4px; font-size: 0.93rem;
+}
+.platform-note strong { color: var(--navy); }
+
+/* =============== Key Data =============== */
+.data-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+}
+.data-card {
+  background: #fff; border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 22px;
+  display: flex; flex-direction: column;
+}
+.data-card-head {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 12px;
+}
+.data-num {
+  width: 28px; height: 28px; border-radius: 50%;
+  background: var(--navy); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 0.85rem; flex-shrink: 0;
+}
+.data-card h3 { margin: 0; font-size: 1.1rem; }
+.data-card ul { list-style: none; padding: 0; margin: 12px 0; }
+.data-card li {
+  padding: 6px 0; font-size: 0.94rem;
+  border-bottom: 1px dashed var(--border);
+}
+.data-card li:last-child { border-bottom: none; }
+.data-card li strong { color: var(--navy); }
+.data-figure {
+  margin: auto 0; background: #fff;
+  border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 10px; overflow: hidden;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.data-figure img {
+  width: 100%; height: auto; border-radius: 6px; display: block;
+  margin: 0 auto; cursor: zoom-in;
+  transition: transform 0.15s;
+}
+.data-figure img:hover { transform: scale(1.015); }
+
+/* Lightbox */
+.lightbox {
+  position: fixed; inset: 0; z-index: 9999;
+  background: rgba(20, 25, 50, 0.92);
+  display: none; align-items: center; justify-content: center;
+  padding: 24px; cursor: zoom-out;
+  animation: lb-fade 0.18s ease-out;
+}
+.lightbox.open { display: flex; }
+.lightbox img {
+  max-width: 96vw; max-height: 90vh;
+  width: auto; height: auto;
+  border-radius: 8px; box-shadow: 0 12px 50px rgba(0,0,0,0.5);
+  background: #fff;
+}
+.lightbox-caption {
+  position: absolute; bottom: 20px; left: 0; right: 0;
+  text-align: center; color: #fff; font-size: 0.92rem;
+  padding: 0 24px; pointer-events: none;
+}
+.lightbox-close {
+  position: absolute; top: 18px; right: 22px;
+  width: 40px; height: 40px; border-radius: 50%;
+  background: rgba(255,255,255,0.15); border: none; color: #fff;
+  font-size: 1.3rem; cursor: pointer; line-height: 1;
+  transition: background 0.15s;
+}
+.lightbox-close:hover { background: rgba(255,255,255,0.3); }
+@keyframes lb-fade {
+  from { opacity: 0; } to { opacity: 1; }
+}
+.data-figure figcaption {
+  font-size: 0.78rem; color: var(--muted);
+  margin-top: 8px; text-align: center; line-height: 1.4;
+}
+
+/* Science MoA figure */
+.fig-panel {
+  background: #fff; border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 14px;
+  box-shadow: var(--shadow);
+}
+.fig-panel img { width: 100%; height: auto; border-radius: 6px; display: block; }
+.fig-panel figcaption {
+  font-size: 0.82rem; color: var(--muted);
+  margin-top: 10px; text-align: center; line-height: 1.4;
+}
+
+/* =============== Pipeline =============== */
+.timeline {
+  position: relative; padding: 20px 0 0;
+}
+.timeline::before {
+  content: ""; position: absolute; left: 32px; top: 30px; bottom: 10px;
+  width: 2px; background: var(--border);
+}
+.milestone {
+  position: relative; padding: 0 0 24px 72px;
+  min-height: 64px;
+}
+.milestone-dot {
+  position: absolute; left: 20px; top: 4px;
+  width: 26px; height: 26px; border-radius: 50%;
+  background: #fff; border: 3px solid var(--accent);
+  z-index: 1; display: flex; align-items: center; justify-content: center;
+  font-size: 0.85rem; font-weight: 700;
+}
+.milestone.done .milestone-dot { background: var(--green); border-color: var(--green); color: #fff; }
+.milestone.done .milestone-dot::before { content: "✓"; }
+.milestone.current .milestone-dot { background: var(--accent); border-color: var(--accent); color: #fff; }
+.milestone.goal .milestone-dot { background: var(--amber); border-color: var(--amber); color: #fff; }
+.milestone.goal .milestone-dot::before { content: "★"; font-size: 0.75rem; }
+.milestone-year {
+  font-weight: 800; color: var(--navy); font-size: 0.95rem; margin-bottom: 4px;
+}
+.milestone-title { font-weight: 600; color: var(--text); margin-bottom: 4px; }
+.milestone-detail { font-size: 0.9rem; color: var(--muted); }
+
+/* =============== Publication =============== */
+.pub-card {
+  background: #fff; border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  padding: 28px 32px; border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+.pub-authors { font-size: 0.93rem; color: var(--muted); margin-bottom: 12px; line-height: 1.5; }
+.pub-authors .corresponding { color: var(--navy); font-weight: 600; }
+.pub-title {
+  font-size: 1.2rem; font-weight: 700; color: var(--navy);
+  margin-bottom: 12px; line-height: 1.4;
+}
+.pub-citation { font-size: 0.98rem; color: var(--text); margin-bottom: 18px; }
+.pub-citation strong { color: var(--navy); }
+.pub-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn-sm {
+  padding: 8px 16px; font-size: 0.88rem;
+  background: var(--navy); color: #fff; border-radius: 6px;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.btn-sm:hover { background: var(--accent); color: #fff; }
+.btn-sm.outline { background: transparent; color: var(--navy); border: 1.5px solid var(--navy); }
+.btn-sm.outline:hover { background: var(--navy); color: #fff; }
+
+/* =============== Partnership =============== */
+.partnership-grid {
+  display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 28px; align-items: start;
+}
+.partnership-main { background: #fff; border-radius: var(--radius-lg);
+  padding: 28px; border: 1px solid var(--border); }
+.partnership-main ul { list-style: none; padding: 0; margin-top: 12px; }
+.partnership-main li {
+  padding: 10px 0; border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+.partnership-main li:last-child { border-bottom: none; }
+.partnership-main li strong { color: var(--navy); display: inline-block; min-width: 100px; }
+
+.ip-card {
+  background: var(--navy); color: #fff;
+  padding: 24px; border-radius: var(--radius-lg);
+}
+.ip-card h3 { color: #fff; margin-bottom: 14px; }
+.ip-card ul { list-style: none; padding: 0; }
+.ip-card li {
+  padding: 8px 0; font-size: 0.9rem; color: var(--ice);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.ip-card li:last-child { border-bottom: none; }
+.ip-card li strong { color: #fff; }
+
+/* =============== Contact =============== */
+.contact-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;
+}
+.contact-person {
+  padding: 14px 0;
+  border-top: 1px dashed var(--border);
+}
+.contact-person:first-of-type {
+  border-top: none; padding-top: 0;
+}
+.contact-card {
+  background: #fff; border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 28px;
+  position: relative; overflow: hidden;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.contact-card::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+  background: linear-gradient(90deg, var(--navy), var(--accent));
+}
+.contact-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-hover); }
+.contact-role {
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 14px;
+}
+.contact-name { font-size: 1.25rem; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+.contact-title { font-size: 0.95rem; color: var(--muted); margin-bottom: 4px; }
+.contact-org { font-size: 0.95rem; color: var(--text); margin-bottom: 16px; font-weight: 500; }
+.contact-email {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: "Menlo", "Consolas", monospace;
+  font-size: 0.92rem; color: var(--teal); margin-bottom: 16px;
+  word-break: break-all;
+}
+.contact-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.acknowledgements {
+  margin-top: 32px; padding: 20px 24px;
+  background: var(--bg); border-radius: var(--radius);
+  border-left: 3px solid var(--accent);
+  font-size: 0.9rem; color: var(--muted);
+}
+.acknowledgements strong { color: var(--navy); }
+
+/* =============== Footer =============== */
+footer {
+  background: var(--navy); color: var(--ice);
+  padding: 40px 0 28px; font-size: 0.88rem;
+}
+footer .footer-inner {
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;
+}
+footer .footer-brand { font-weight: 700; color: #fff; font-size: 1rem; margin-bottom: 6px; }
+footer .footer-logos { display: flex; gap: 18px; align-items: center; margin-top: 14px; }
+footer .footer-logos img {
+  height: 42px; width: auto;
+  /* Transparent background — retain KIST brand colors over navy footer */
+}
+footer .footer-meta { color: rgba(202, 220, 252, 0.7); }
+footer .footer-disclosure {
+  margin-top: 20px; padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.82rem; color: rgba(202, 220, 252, 0.6);
+}
+
+/* =============== Responsive =============== */
+@media (max-width: 900px) {
+  .glance-grid { grid-template-columns: repeat(2, 1fr); }
+  .moa-grid { grid-template-columns: 1fr; }
+  .data-grid { grid-template-columns: 1fr; }
+  .partnership-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  section { padding: 56px 0; }
+  .hero { padding: 72px 0 64px; }
+  .nav-links { display: none; }
+  .nav-links.open {
+    display: flex; position: absolute; top: 100%; left: 0; right: 0;
+    background: #fff; flex-direction: column; padding: 16px 24px;
+    border-bottom: 1px solid var(--border); gap: 14px;
+  }
+  .nav-toggle { display: block; }
+  .hero-cta .btn { flex: 1; justify-content: center; }
+}
+@media (max-width: 400px) {
+  .glance-grid { grid-template-columns: 1fr; }
+  .container { padding: 0 18px; }
+}
+
+/* =============== Print =============== */
+@media print {
+  .nav, .hero-cta, .pub-actions, .contact-actions { display: none !important; }
+  body { background: #fff; }
+  section { padding: 20px 0; page-break-inside: avoid; }
+  .hero { background: #fff; color: var(--navy); }
+  .hero h1, .hero-subtitle, .hero-lead { color: var(--navy); }
+  .figure-placeholder, .data-figure { border: 1px solid #999; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============ STICKY NAV ============ -->
+<nav class="nav" aria-label="Primary">
+  <div class="container nav-inner">
+    <a href="#top" class="nav-brand">HBPB1-<span>007</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#science">Science</a></li>
+      <li><a href="#data">Data</a></li>
+      <li><a href="#pipeline">Pipeline</a></li>
+      <li><a href="#publication">Publication</a></li>
+      <li><a href="#partnership">Partnership</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="nav-cta">Partnering ↗</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="container hero-inner">
+    <div class="hero-badges">
+      <span class="badge">BIO International Convention 2026</span>
+      <span class="badge">San Diego · June 22–25</span>
+      <span class="badge">KIST Technology Showcase</span>
+    </div>
+    <h1>HBPB1-007</h1>
+    <p class="hero-subtitle">First-in-Class Topical Therapeutic Candidate for Geographic Atrophy</p>
+    <p class="hero-lead">A 32-amino-acid TIR-derived peptide that blocks TLR signalosome assembly upstream of complement — delivered as a non-invasive eye drop. Two FDA Pre-IND meetings complete, IND-enabling GLP toxicology package agreed with FDA, US IND targeted Q1 2028. Open to partnering, out-licensing, and co-development discussions.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Request Partnering Meeting
+      </a>
+      <a href="https://doi.org/10.1002/advs.202406018" class="btn btn-ghost" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        View Publication (Adv Sci 2025)
+      </a>
+    </div>
+    <div class="hero-session">
+      <div class="hero-session-label">Featured At</div>
+      <div class="hero-session-text">BIO International Convention 2026 · KIST Technology Showcase · San Diego, CA · June 22–25, 2026</div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ AT A GLANCE ============ -->
+<section class="glance" aria-labelledby="glance-h">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">At a Glance</div>
+      <h2 id="glance-h">Program Snapshot</h2>
+    </div>
+    <div class="glance-grid">
+      <div class="kpi">
+        <div class="kpi-label">Modality</div>
+        <div class="kpi-value">32-aa peptide<br><span class="muted" style="font-weight:400;font-size:0.9rem">penetratin CPP + TIR motif</span></div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Target</div>
+        <div class="kpi-value">TLR signalosome<br><span class="muted" style="font-weight:400;font-size:0.9rem">MAL / MyD88 TIR interface</span></div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Route</div>
+        <div class="kpi-value">Topical eye drop<br><span class="muted" style="font-weight:400;font-size:0.9rem">non-invasive, outpatient</span></div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Stage</div>
+        <div class="kpi-value">Pre-IND complete<br><span class="muted" style="font-weight:400;font-size:0.9rem">IND 2028 Q1 target</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCIENCE (MoA) ============ -->
+<section id="science" aria-labelledby="science-h">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Science</div>
+      <h2 id="science-h">Mechanism of Action</h2>
+      <p class="section-lead">HBPB1-007 intercepts TIR-TIR contacts required to nucleate the TLR signalosome, shutting down NF-κB / MAPK activation and the broader inflammatory cascade it drives.</p>
+    </div>
+    <div class="moa-grid">
+      <ul class="moa-list">
+        <li><strong>Disrupts MAL–MyD88 TIR assembly.</strong> Prevents myddosome nucleation at TLR adapters.</li>
+        <li><strong>Suppresses NF-κB and MAPK phosphorylation.</strong> ERK, JNK, p38 signaling attenuated in macrophages and RPE-relevant models.</li>
+        <li><strong>Dampens pro-inflammatory cytokines.</strong> IL-6, IL-8, and CCL2 are reduced; downstream effects extend to the complement axis as one of several affected pathways.</li>
+      </ul>
+      <figure class="fig-panel" aria-label="In vitro mechanism panel">
+        <img src="images/moa-invitro.png" alt="In vitro mechanism of action: HBPB1-007 suppresses NF-κB and MAPK phosphorylation and downregulates pro-inflammatory cytokines." loading="lazy">
+        <figcaption>In vitro MoA panel · NF-κB / MAPK signaling and cytokine readout</figcaption>
+      </figure>
+    </div>
+    <div class="platform-note">
+      <strong>Platform:</strong> Discovered via <strong>T-Surf</strong> — a massively parallel phage-display screen of TIR-domain surface peptides (Lim et al., <em>Adv Sci</em> 2025).
+    </div>
+  </div>
+</section>
+
+<!-- ============ KEY DATA ============ -->
+<section id="data" aria-labelledby="data-h">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Key Data</div>
+      <h2 id="data-h">Preclinical Evidence</h2>
+      <p class="section-lead">Three pillars of evidence supporting HBPB1-007 as a topical GA candidate: retinal efficacy, posterior ocular delivery, and ocular safety.</p>
+    </div>
+    <div class="data-grid">
+      <!-- Card 1: Efficacy -->
+      <article class="data-card">
+        <div class="data-card-head">
+          <div class="data-num">1</div>
+          <h3>In vivo Efficacy</h3>
+        </div>
+        <p class="muted" style="font-size:0.88rem; margin-bottom:8px;">NaIO₃ mouse model · topical HBPB1-007 at 0.01% and 0.1% (n=10/group)</p>
+        <ul>
+          <li><strong>Retinal architecture preserved</strong> — ONL thickness rescued, ONL folding reduced</li>
+          <li><strong>Photoreceptors and RPE protected</strong> — fewer TUNEL⁺ cells, RPE65 expression maintained</li>
+          <li><strong>Neuroinflammation attenuated</strong> — IBA1⁺ microglial infiltration significantly reduced</li>
+        </ul>
+        <figure class="data-figure">
+          <img src="images/efficacy.png" alt="NaIO₃-induced mouse model showing topical HBPB1-007 at 0.01% and 0.1% preserves retinal architecture (ONL thickness, ONL folding), reduces photoreceptor TUNEL-positive cells, maintains RPE65 expression, and decreases IBA1-positive microglial infiltration. Quantitative panels and histology (Fundus, SD-OCT, H&E, TUNEL, RPE65/Iba-1) across groups G1 through G4." loading="lazy">
+          <figcaption>NaIO₃ mouse model · multi-parameter retinal protection across groups G1–G4 (n=10/group)</figcaption>
+        </figure>
+      </article>
+
+      <!-- Card 2: Posterior Ocular Delivery -->
+      <article class="data-card">
+        <div class="data-card-head">
+          <div class="data-num">2</div>
+          <h3>Posterior Ocular Delivery</h3>
+        </div>
+        <p class="muted" style="font-size:0.88rem; margin-bottom:8px;">Topical instillation reaches the posterior segment</p>
+        <ul>
+          <li><strong>Retina / choroid exposure</strong> achieved after eye-drop dosing</li>
+          <li>Supports non-invasive alternative to intravitreal injection</li>
+          <li>Bridges a critical gap for GA patient compliance</li>
+        </ul>
+        <figure class="data-figure">
+          <img src="images/ocular-delivery.png" alt="Posterior ocular delivery: topical eye-drop administration achieves distribution to retina and choroid." loading="lazy">
+          <figcaption>Ocular tissue distribution following topical dosing</figcaption>
+        </figure>
+      </article>
+
+      <!-- Card 3: Ocular Safety -->
+      <article class="data-card">
+        <div class="data-card-head">
+          <div class="data-num">3</div>
+          <h3>Ocular Safety</h3>
+        </div>
+        <p class="muted" style="font-size:0.88rem; margin-bottom:8px;">NZW rabbit 4-week topical study (preliminary)</p>
+        <ul>
+          <li><strong>IOP within normal range</strong> (10–21 mmHg) at all time points</li>
+          <li>No adverse findings up to <strong>0.5% solution</strong> (300 µL/head/day)</li>
+          <li>No treatment-related ocular findings observed</li>
+        </ul>
+        <figure class="data-figure">
+          <img src="images/iop-safety.png" alt="IOP time course in NZW rabbit over 4 weeks of topical dosing: all values remain within the 10–21 mmHg normal range." loading="lazy">
+          <figcaption>Intraocular pressure · 4-week rabbit topical study</figcaption>
+        </figure>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PIPELINE ============ -->
+<section id="pipeline" aria-labelledby="pipeline-h">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Development</div>
+      <h2 id="pipeline-h">Pipeline &amp; Timeline</h2>
+      <p class="section-lead">From KIST discovery and exclusive license to Huons BioPharma, through Pre-IND completion and a 3-species GLP toxicology program, toward US IND submission.</p>
+    </div>
+    <div class="timeline">
+      <div class="milestone done">
+        <div class="milestone-dot"></div>
+        <div class="milestone-year">December 2024</div>
+        <div class="milestone-title">KIST → Huons BioPharma exclusive license</div>
+        <div class="milestone-detail">Global clinical development rights for dry AMD topical indication.</div>
+      </div>
+      <div class="milestone done">
+        <div class="milestone-dot"></div>
+        <div class="milestone-year">2025–2026 Q1</div>
+        <div class="milestone-title">Two FDA Pre-IND meetings (Sep, Nov 2025) · 4-week rabbit preliminary ocular tox · 2nd Pre-IND Written Response received Feb 9, 2026</div>
+        <div class="milestone-detail">No test article-related findings at the highest tested dose (0.5% solution, 300 µL/head/day). FDA-agreed IND-enabling tox package: Rabbit 39-week + Beagle 26-week ocular toxicity + Rat 26-week SC systemic toxicity.</div>
+      </div>
+      <div class="milestone current">
+        <div class="milestone-dot"></div>
+        <div class="milestone-year">2026</div>
+        <div class="milestone-title">KDDF-supported IND-enabling development</div>
+        <div class="milestone-detail">KDDF grant RS-2026-25502083 (3-yr, KRW 2 billion, Apr 2026 – Mar 2028). DS engineering batch (CSBio, Jun–Jul). SPR binding quantitation (Koma Biotech, results expected June). Formulation lock (Sep). DP engineering run + GLP-Tox contracts (Q4, Frontage).</div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-dot"></div>
+        <div class="milestone-year">2027</div>
+        <div class="milestone-title">3-species GLP toxicology in parallel</div>
+        <div class="milestone-detail">Ocular toxicity: rabbit 39-week · dog 26-week. Systemic toxicity: rat 26-week (SC). IND CTD assembly.</div>
+      </div>
+      <div class="milestone goal">
+        <div class="milestone-dot"></div>
+        <div class="milestone-year">2028 Q1</div>
+        <div class="milestone-title">US IND submission → Phase 2</div>
+        <div class="milestone-detail">Target indication: Geographic Atrophy secondary to dry AMD.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PUBLICATION ============ -->
+<section id="publication" aria-labelledby="pub-h">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Publication</div>
+      <h2 id="pub-h">Peer-Reviewed Evidence</h2>
+    </div>
+    <article class="pub-card">
+      <div class="pub-authors">
+        Yun Lim, Tae Kyeom Kang, Meong Il Kim, Dohyeon Kim, Ji Yul Kim, Sang Hoon Jung,
+        Keunwan Park, Wook-Bin Lee, Moon-Hyeong Seo
+      </div>
+      <div class="pub-title">Massively Parallel Screening of Toll/Interleukin-1 Receptor (TIR)-Derived Peptides Reveals Multiple Toll-Like Receptors (TLRs)-Targeting Immunomodulatory Peptides</div>
+      <div class="pub-citation"><strong>Advanced Science</strong> · 2025 · Volume 12, Issue 1, Article 2406018</div>
+      <div class="pub-actions">
+        <a href="https://doi.org/10.1002/advs.202406018" class="btn-sm" target="_blank" rel="noopener">
+          DOI: 10.1002/advs.202406018 ↗
+        </a>
+        <a href="https://moonhyeong.github.io/hbpb1-007-arvo2026/" class="btn-sm outline" target="_blank" rel="noopener">
+          ARVO 2026 Poster Site ↗
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ PARTNERSHIP & IP ============ -->
+<section id="partnership" aria-labelledby="partner-h">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Partnership</div>
+      <h2 id="partner-h">Licensing &amp; IP</h2>
+    </div>
+    <div class="partnership-grid">
+      <div class="partnership-main">
+        <h3>KIST × Huons BioPharma</h3>
+        <p class="muted" style="margin-bottom:6px;">Exclusive license signed December 2024. Global development rights for dry AMD topical indication.</p>
+        <ul>
+          <li><strong>Licensor</strong> Korea Institute of Science and Technology (KIST)</li>
+          <li><strong>Licensee</strong> Huons BioPharma</li>
+          <li><strong>Scope</strong> TDIP composition-of-matter patent, global dry-AMD topical use</li>
+        </ul>
+      </div>
+      <aside class="ip-card">
+        <h3>Intellectual Property</h3>
+        <p style="color:var(--ice); margin:0;">Patent applications filed in <strong style="color:#fff;">KR · PCT · US · EU</strong>.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" aria-labelledby="contact-h">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Contact</div>
+      <h2 id="contact-h">Get in Touch</h2>
+      <p class="section-lead">For partnering, licensing, and investment inquiries. KIST handles upstream technology transfer; Huons BioPharma handles development partnerships and BD.</p>
+    </div>
+    <div class="contact-grid">
+      <article class="contact-card">
+        <div class="contact-role">Drug Discovery</div>
+        <div class="contact-name">Moon-Hyeong Seo, Ph.D.</div>
+        <div class="contact-title">Principal Researcher</div>
+        <div class="contact-org">Korea Institute of Science and Technology (KIST)<br>Natural Product Drug Development Division</div>
+        <a href="mailto:mhseo@kist.re.kr" class="contact-email">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          mhseo@kist.re.kr
+        </a>
+      </article>
+      <article class="contact-card">
+        <div class="contact-role">Drug Development</div>
+        <div class="contact-org" style="margin-bottom:18px;">Huons BioPharma</div>
+        <div class="contact-person">
+          <div class="contact-name">Do Soo Jang, Ph.D.</div>
+          <div class="contact-title">R&amp;D Director</div>
+          <a href="mailto:dosoo.jang@huonsbiopharma.com" class="contact-email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            dosoo.jang@huonsbiopharma.com
+          </a>
+        </div>
+        <div class="contact-person">
+          <div class="contact-name">Ukjin Son</div>
+          <div class="contact-title">Manager / Assistant Team Leader<br>Bio Research 3 Team</div>
+          <a href="mailto:ukjin.son@huonsbiopharma.com" class="contact-email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            ukjin.son@huonsbiopharma.com
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container footer-inner">
+    <div>
+      <div class="footer-brand">HBPB1-007 · BIO USA 2026</div>
+      <div class="footer-meta">Korea Institute of Science and Technology × Huons BioPharma</div>
+      <div class="footer-logos">
+        <img src="images/logo-kist.png" alt="Korea Institute of Science and Technology (KIST)">
+      </div>
+    </div>
+    <div class="footer-meta">
+      BIO International Convention 2026<br>
+      KIST Technology Showcase<br>
+      San Diego, CA · June 22–25, 2026
+    </div>
+  </div>
+  <div class="container footer-disclosure">
+    <strong style="color:#fff;">Disclosure.</strong>
+    HBPB1-007 was discovered at KIST and is exclusively licensed to Huons BioPharma (December 2024) for development and commercialization.
+    KIST receives milestone payments, royalties, and sublicensing income; KIST inventors are eligible for a share in accordance with KIST regulations and receive no direct compensation from Huons BioPharma.
+    Huons BioPharma is independently developing HBPB1-007 (US IND planned Q1 2028).
+    Preclinical safety and PK studies are sponsored by Huons BioPharma; discovery and proof-of-concept efficacy data were generated through KIST intramural research.
+    <br><br>
+    <strong style="color:#fff;">Funding:</strong> KIST intramural grants · Korea Drug Development Fund (KDDF) grant RS-2026-25502083 (2026–2028).
+    <br><br>
+    © 2026 Korea Institute of Science and Technology. All rights reserved.
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged figure">
+  <button class="lightbox-close" aria-label="Close" id="lightboxClose">×</button>
+  <img src="" alt="" id="lightboxImg">
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+</div>
+
+<script>
+// Close mobile menu on link click
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+});
+
+// Lightbox for Key Data figures
+(function() {
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lightboxImg');
+  const lbCap = document.getElementById('lightboxCaption');
+  const lbClose = document.getElementById('lightboxClose');
+
+  function open(src, alt, caption) {
+    lbImg.src = src;
+    lbImg.alt = alt || '';
+    lbCap.textContent = caption || '';
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    lb.classList.remove('open');
+    lbImg.src = '';
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.data-figure img').forEach(img => {
+    img.addEventListener('click', () => {
+      const fig = img.closest('figure');
+      const caption = fig ? (fig.querySelector('figcaption')?.textContent || '') : '';
+      open(img.src, img.alt, caption);
+    });
+  });
+
+  lb.addEventListener('click', (e) => {
+    if (e.target === lb || e.target === lbImg) return close();
+  });
+  lbClose.addEventListener('click', close);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lb.classList.contains('open')) close();
+  });
+})();
+</script>
+
+</body>
+</html>

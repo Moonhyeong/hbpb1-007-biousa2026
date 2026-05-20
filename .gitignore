@@ -1,0 +1,17 @@
+# macOS / Windows / Linux system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Python local server artifacts
+__pycache__/
+*.pyc
+
+# Internal workflow docs (kept local only, not pushed to public repo)
+UPDATE_GUIDE.md
