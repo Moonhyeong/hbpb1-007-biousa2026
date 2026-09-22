@@ -1,8 +1,14 @@
-# HBPB1-007 · BIO USA 2026 Landing Page
+# HBPB1-007 · BIO-Europe 2026 & BIO USA 2026 Landing Page
 
-Partnering landing page for **HBPB1-007**, featured in the **KIST Technology Showcase** at the BIO International Convention 2026.
+Partnering landing page for **HBPB1-007**, featured in **KIST Partner Technologies** at BIO-Europe 2026 (Köln) and in the **KIST Technology Showcase** at the BIO International Convention 2026 (San Diego).
 
-**→ View landing page: https://[GitHub-username].github.io/hbpb1-007-biousa2026/** *(URL pending repository creation)*
+**→ View landing page: https://moonhyeong.github.io/hbpb1-007-biousa2026/**
+
+> ⚠️ **Do not rename this repository or change the published URL.**
+> The printed QR code in the KIST Partner Technologies booklet for **2026 BIO Europe** (HBPB1-007 page, p.37) encodes this exact URL
+> — verified 2026-09-22 by extracting the QR from the booklet PDF and matching all 1,681 modules against
+> `qr/qr_hbpb1-007-biousa2026_navy.png`. The `biousa2026` path is therefore a permanent address, not an event label.
+> To serve a new event, edit this page's event branding instead of creating a new repository.
 
 ---
 
@@ -10,9 +16,15 @@ Partnering landing page for **HBPB1-007**, featured in the **KIST Technology Sho
 
 VC investors, pharmaceutical industry BD / partnering teams, and legal / IP counsel evaluating in-licensing or co-development opportunities.
 
-## Convention
+## Conventions
 
-- **Event:** BIO International Convention 2026
+**BIO-Europe 2026** (upcoming)
+- **Programme:** KIST Partner Technologies — HBPB1-007 on pp. 36–37
+- **Venue:** Köln, Germany
+- **Dates:** November 9–13, 2026
+- Source: `KIST_Partner_Technologies_2026_BIO_Europe_EN-ff.pdf` cover
+
+**BIO International Convention 2026** (concluded)
 - **Track:** KIST Technology Showcase
 - **Venue:** San Diego Convention Center, San Diego, CA
 - **Dates:** June 22–25, 2026
